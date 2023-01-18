@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+*, ::after, ::before {
+  box-sizing: border-box;
+  font-size:16px;
+  font-family:'Poppins';
+  --white:#f0f0f0;
+  --gray:#dfe0db;
+  --black:#0d0f05;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin:0;
+  background-color:var(--white);
+  color:var(--black);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* navbar */
+nav {
+  height:75px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-color:var(--gray);
+  padding: 10px 36px;
+  box-shadow: 0px 5px 7.5px rgba(0,0,0,0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-logo {
+  /* outline:2px solid red; */
+  max-width:150px;
+  max-height:100px;
 }
 
-.App-link {
-  color: #61dafb;
+/* hero content */
+.hero-container {
+  /* border:2px solid red; */
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-image {
+  align-self:center;
+  max-width:400px;
 }
+
+.hero-text-container {
+  /* border:2px solid red; */
+  align-self:center;
+  padding:0;
+}
+
+.hero-title {
+  font-size:2em;
+  margin-bottom:16px;
+}
+
+.hero-paragraph {
+  font-size:1.25em;
+  margin-top:0;
+}
+
+
+/* cards */
+.card {
+  width:175px;
+  font-size:1em;
+  margin:20px;
+}
+
+.card--image {
+  width:100%;
+  border-radius:9px;
+}
+
+.card--stats {
+  display:flex;
+  align-items:center;
+}
+.card--star {
+  height: 14px;
+}
+.faint {
+  opacity:0.5;
+  font-style:normal;
+}
+
+.reviews {
+  margin-right:0.4em;
+}
+
+.bold {
+  font-weight:bold;
+}
+
+/* 
+card container */
+
+.cards--container {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  overflow-x:auto;
+  background-color:var(--gray);
+  box-shadow: 0px 5px 7.5px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+
+/* 
+app-container 
+
+navbar-container
+navbar-logo
+
+hero-container
+hero-image
+hero-text-container
+hero-title
+hero-paragraph
+
+card
+card--image
+card--stats
+card--star
+faint
+card--summary
+card--pricing
+bold
+
+cards-container
+
+
+
+*/
