@@ -68,7 +68,21 @@ nav {
   font-size:1em;
   margin:20px;
   height:300px;
+  position:relative;
 
+}
+
+.card--badge {
+  /* outline:2px solid red; */
+  position:absolute;
+  margin:10px;
+  background-color:var(--white);
+  width:80px;
+  height:24px;
+  text-align:center;
+  padding:auto;
+  border-radius:5px;
+  font-size:1em;
 }
 
 .card--image {
@@ -130,6 +144,7 @@ hero-title
 hero-paragraph
 
 card
+card--badge
 card--image
 card--stats
 card--star
